@@ -6,7 +6,7 @@ import { HttpRequest, HttpResponse } from '@/web-controllers/ports'
 import { InMemoryUserRepository } from '@test/usecases/register-user-on-mailing-list/repository'
 
 describe('Register user web controller', () => {
-  test('Should return sttatus code 201 when request contains valid user data', async () => {
+  test('Should return status code 201 when request contains valid user data', async () => {
     const request: HttpRequest = {
       body: {
         name: 'Any name',
